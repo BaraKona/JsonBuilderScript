@@ -31,5 +31,5 @@ function makeNFTS (number) {
         fs.writeFileSync('./indige-test/indige-' + x + '.json', json)
     }
 }
-
+//how many json Files you want to generate
 makeNFTS(1)

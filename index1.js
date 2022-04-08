@@ -1,10 +1,9 @@
-function rename () {
+  function rename () {
     var fs = require ('fs')
-    for (let x = 0; x <=100; ++x){
-        fs.rename('./images/indige ' +'('+ x +')'+'.jpg', './newImages/indige-' + x + '.jpg', function(err) {
+    fs.readdirSync('./images/').forEach((file, index) => {  //location of files you wish to change
+        fs.rename(`./images/${file}`, './newImages/newName' + index + '.jpg', function(err) { // location of new files + file name you want
             if (err) console.log(err)
         })
-        }
-    }
-
+    });
+  }
 rename()
