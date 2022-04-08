@@ -32,4 +32,4 @@ function makeNFTS (number) {
     }
 }
 
-makeNFTS(100)
+makeNFTS(1)
